@@ -1,0 +1,127 @@
+/*
+    CSS das páginas roi, error e teamo
+*/
+/*roi*/
+.centralizar{
+    max-width: 48em;
+    margin: 2em auto;
+    text-align: center;
+    font-size: 2em;
+} 
+.botaoa{
+    display: inline-block;
+    margin: 1.5em;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background-color: #FF0000;
+    color: #FFF;
+    border-radius: 5px;
+} 
+/* .botaoinput{
+    margin: 48px;
+    padding: 16px 32px;
+    background-color: #FF0000;
+    color: #FFF;
+    border-radius: 5px;
+    border-style: hidden; 
+} */
+#botaosim{
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
+#botaonao{
+    position: absolute;
+    top: 500px;
+    left: 800px;
+}
+@media (max-width: 820px){
+    #botaosim{
+        left: 200px;
+    }
+    #botaonao{  
+        left: 430px;
+    }
+}
+@media (max-width: 420px){
+    #botaosim{
+        top: 650px; 
+        left: 10px;
+    }
+    #botaonao{  
+        top: 650px; 
+        left: 170px;
+    }
+}
+img.beijo{
+    width: 240px;  /*1200*/
+    height: 320px; /*1600*/
+    border-radius: 5px;
+}
+
+/*error*/
+img.meninotriste{
+    width: 500px;
+    height: 281px;
+    border-radius: 5px;
+}
+/*teamo*/
+.heart{
+    margin: 5em auto;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    transform: rotate(-45deg);
+    position: relative;
+    -webkit-animation: pulsa 1s linear 0s infinite;
+}
+@keyframes pulsa {
+    0% {
+        transform: scale(0.9) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1) rotate(-45deg);
+    }
+    70% {
+        transform: scale(1.1) rotate(-45deg);
+    }
+    80% {
+        transform: scale(1.2) rotate(-45deg);
+    }
+    100% {
+        transform: scale(1) rotate(-45deg);
+    }
+}
+.heart:before, .heart:after{
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}
+.heart:after{
+    top: -10px;
+}
+.heart:before{
+    left: 10px;
+}
+
+.photos{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+.photos > div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.photos > div:hover{
+    flex: 5;
+    border-radius: 1rem;
+}
+

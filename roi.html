@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/coracao1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <title>ROI</title>
+</head>
+<body class="centralizar">
+    <h1>Quer namorar comigo?</h1>
+    <img class="beijo" src="img/beijo.jpeg" alt="imagem fofa">
+    <br>
+    <div id="botaosim">
+        <a class="botaoa" href="teamo.html" >SIM</a>
+    </div>
+    <div id="botaonao">
+        <a class="botaoa" href="error.html" onmouseover="no()">NÃO</a>
+    </div>
+    <script>
+        var flag=1;
+        function no(){
+            if(flag==1){
+                document.getElementById("botaonao").style.top='450px';
+                document.getElementById("botaonao").style.left='1000px';
+                flag=2;
+            }
+            else if(flag==2){
+                document.getElementById("botaonao").style.top='500px';
+                document.getElementById("botaonao").style.left='800px';
+                flag=3;
+            }
+            else if(flag==3){
+                document.getElementById("botaonao").style.top='358px';
+                document.getElementById("botaonao").style.left='147px';
+                flag=4;
+            }
+            else if(flag==4){
+                document.getElementById("botaonao").style.top='100px';
+                document.getElementById("botaonao").style.left='400px';
+                flag=5;
+            }
+            else if(flag==5){
+                document.getElementById("botaonao").style.top='50px';
+                document.getElementById("botaonao").style.left='1200px';
+                flag=6;
+            }
+            else if(flag==6){
+                alert("Para de fugir e aceita logo");
+                flag=1;
+            }
+        }
+    </script>
+</body>
+</html>
